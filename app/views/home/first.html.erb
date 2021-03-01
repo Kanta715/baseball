@@ -1,11 +1,56 @@
-<h1>KOKUGAKUIN</h1>
-<table class="table table-striped">
-    <tr>
-        <td>
-            <%= link_to "チーム登録", new_team_path, class: "btn btn-warning" %>
-        </td>
-        <td>
-            <%= link_to "参加申請", new_team_path, class: "btn btn-warning" %>
-        </td>
-    </tr>
-</table>
+<div class="firststep">
+    <div class="kokugaku">
+        <div class="name">
+            <h1>KOKUGAKU</h1>
+        </div>
+    </div>
+    <div class="link">
+        <div class="go1">
+            <a href="#">チーム登録</a>
+        </div>
+        <div class="go2">
+            <a href="#">参加申請</a>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    .main {
+        background-color: red;
+        height: 100%;
+    }
+    
+    .firststep {
+        display: flex;
+        flex-wrap: wrap;
+        height: 500px;
+    }
+    
+    .kokugaku {
+        font-weight: bold;
+        width: 70%;
+    }
+    
+    .name {
+        margin: 200px 30px;
+    }
+    
+    .link {
+        width: 30%;
+        height: 100%;
+        position: relative;
+    }
+    
+    .go1 {
+        position: absolute;
+        top: 25%;
+        left: 15%;
+    }
+    
+    .go2 {
+        position: absolute;
+        top: 55%;
+        left: 15%;
+    }
+</style>
