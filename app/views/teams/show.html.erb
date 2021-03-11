@@ -1,0 +1,12 @@
+<h1>選手一覧</h1>
+<table class="table table-striped">
+    <tr>
+        <th>名前</th>
+    </tr>
+    <% @team.each do |team| %>
+    <tr>
+        <td><%= team.name %></td>
+    </tr>
+    <% end %>
+</table>
+  <%= link_to "戻る", firststep_path, class: "btn btn-secondary" %>
