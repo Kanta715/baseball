@@ -2,10 +2,12 @@
 <table class="table table-striped">
     <tr>
         <th>名前</th>
+        <th>ポジション</th>
     </tr>
-    <% @team.each do |team| %>
+    <% @user.each do |user| %>
     <tr>
-        <td><%= team.name %></td>
+        <td><%= user.name %></td>
+        <td><%= user.position %></td>
     </tr>
     <% end %>
 </table>
