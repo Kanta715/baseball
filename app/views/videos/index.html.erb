@@ -1,0 +1,6 @@
+<h1>動画一覧</h1>
+<%= @video.each do |video| %>
+    <p><%= video.title %></p> <br>
+    <p><%= video.introduction %></p> <br>
+    <%= video_tag rails_blob_path(video.video) %>
+<% end %>

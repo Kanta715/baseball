@@ -1,6 +1,0 @@
-<h1>動画一覧</h1>
-<% if @video.video.attached? %>
-    <p><%= @video.title %></p> <br>
-    <p><%= @video.introduction %></p>
-    <%= vudeo_tag rails_blob_path(@video.video) %>
-<% end %>

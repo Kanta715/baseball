@@ -1,17 +1,17 @@
 class VideosController < ApplicationController
     
+    def index
+        @video = Video.all
+    end    
+    
     def new
        @video = Video.new 
     end
     
     def create
        @video = Video.new(video_params)
-       @video.create
+       @video.save
        redirect_to @video
-    end
-    
-    def show
-        @video = Video.find(params[:id])
     end
     
     private
