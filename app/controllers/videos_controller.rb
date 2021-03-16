@@ -1,7 +1,7 @@
 class VideosController < ApplicationController
     
     def index
-        @video = Video.all
+        @videos = Video.all
     end    
     
     def new
@@ -11,7 +11,7 @@ class VideosController < ApplicationController
     def create
        @video = Video.new(video_params)
        @video.save
-       redirect_to @video
+       redirect_to videos_path
     end
     
     private
